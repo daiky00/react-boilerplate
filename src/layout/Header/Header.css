@@ -4,9 +4,9 @@
 .header {
   background: url(./header-background.svg) no-repeat 0 0, var(--blue);
   background-size: cover;
-  color: var(--white);
   position: relative;
   top: 0;
+  padding: 20px 0;
 
   &:after {
     content: "";

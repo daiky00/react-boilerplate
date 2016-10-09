@@ -1,4 +1,28 @@
+@import '../../variables.css';
 
 .nav {
-  background: red;
+}
+
+.logo {
+  align-items: center;
+  display: flex;
+  float: left;
+  margin: 0;
+}
+
+.ul {
+  float: right;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.li {
+  float: left;
+
+}
+
+.link {
+  color: var(--white);
+  text-decoration: none;
 }

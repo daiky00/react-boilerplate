@@ -1,9 +1,11 @@
+
 body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   padding: 0;
   margin: 0;
 
 }
 
 .app {
-  font-family: helvetica, arial, sans-serif;
+
 }
