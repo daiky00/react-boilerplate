@@ -1,0 +1,16 @@
+@import '../../variables.css';
+
+
+.header {
+  background: url(./header-background.svg) no-repeat 0 0, var(--blue);
+  background-size: cover;
+  color: var(--white);
+  position: relative;
+  top: 0;
+
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
