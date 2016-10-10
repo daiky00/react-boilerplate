@@ -5,6 +5,8 @@
 
 .logo {
   align-items: center;
+  font-size: 22px;
+  font-weight: bold;
   display: flex;
   float: left;
   margin: 0;

@@ -4,11 +4,13 @@
    * ======================================================================== */
    --blue: #29337b;
    --white: #fff;
+   --black: #000;
+   --yellow: #ffab00;
   /*
    * Typography
    * ======================================================================== */
 
-  --font-family-base: 'Segoe UI', 'HelveticaNeue-Light', sans-serif;
+  --font-family-base: 'Open Sans', sans-serif;
 
   /*
    * Layout

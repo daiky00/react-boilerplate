@@ -9,7 +9,8 @@ class Navigation extends Component {
     return (
         <nav className={s.nav}>
           <Link className={s.link} to='/'>
-            <span className={s.logo}><img src={logoUrl} width="45" height="45" alt="logo" />Brand Name</span>
+            <span className={s.logo}><img src={logoUrl} width="45" height="45" alt="logo" />Company</span>
+            <small>Company made their website with React Boilerplate</small>
           </Link>
           <ul className={s.ul}>
             <li className={s.li}><Link className={s.link} to='about'>About</Link></li>

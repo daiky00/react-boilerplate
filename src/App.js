@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Router, Route, Link, IndexRoute, browserHistory } from 'react-router';
-import s from './App.css';
+import s from './app.css';
 import Layout from './layout/Layout';
 import Home from './containers/Home/Home';
 import About from './containers/About/About';
