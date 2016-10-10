@@ -13,9 +13,20 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: bold;
   line-height: 1.1;
   margin-bottom: .5rem;
+}
+
+h1,
+h2 {
+  font-weight: 900
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 100;
 }
 
 .h1, h1 {

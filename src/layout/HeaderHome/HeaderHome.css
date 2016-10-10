@@ -16,3 +16,8 @@
     clear: both;
   }
 }
+
+.coding {
+  display: block;
+  margin: 0 auto;
+}

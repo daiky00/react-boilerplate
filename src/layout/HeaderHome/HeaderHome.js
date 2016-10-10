@@ -1,10 +1,11 @@
 import React, {Component} from 'react';
-import s from './Header.css';
+import s from './HeaderHome.css';
 import Link from 'react-router';
 import Navigation from '../Navigation/Navigation';
 import {Grid, Row, Column} from 'react-cellblock';
+import code from './coding.svg';
 
-class Header extends Component{
+class HeaderHome extends Component{
   render() {
     return (
         <header className={s.header}>
@@ -16,6 +17,7 @@ class Header extends Component{
               <Column width="2/2">
                 <h1>React Boilerplate</h1>
                 <h3>So you can concentrate in what matters to you</h3>
+                <img className={s.coding} src={code} width="500px" height="500px" />
               </Column>
             </Row>
           </Grid>
@@ -24,4 +26,4 @@ class Header extends Component{
       }
     }
 
-export default Header;
+export default HeaderHome;

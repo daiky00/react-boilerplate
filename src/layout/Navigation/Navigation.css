@@ -1,6 +1,7 @@
 @import '../../variables.css';
 
 .nav {
+  height: 100px;
 }
 
 .logo {
