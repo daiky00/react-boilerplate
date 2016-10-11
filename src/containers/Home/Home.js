@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import Features from '../../components/Features/Features'
 
 export default class Home extends Component {
 
   render() {
     return (
-     <h3>Features</h3>
+    <Features />
     );
   }
 };

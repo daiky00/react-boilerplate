@@ -13,10 +13,6 @@ class Header extends Component{
               <Column width="2/2">
                 <Navigation />
               </Column>
-              <Column width="2/2">
-                <h1>React Boilerplate</h1>
-                <h3>So you can concentrate in what matters to you</h3>
-              </Column>
             </Row>
           </Grid>
         </header>

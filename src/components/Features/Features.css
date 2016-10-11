@@ -1,0 +1,28 @@
+@import '../../variables.css';
+
+.features {
+  color: var(--grey);
+  padding: 50px 0;
+  text-align: center;
+}
+
+.code {
+  background: var(--grey);
+  border-radius: 10px;
+  font-size: 1rem;
+  text-align: left;
+  line-height: 1.5;
+  min-height: 432px;
+}
+
+.textRed {
+  color: var(--light-red);
+}
+
+.textGreen {
+  color: var(--green);
+}
+
+.textYellow {
+  color: var(--light-yellow);
+}

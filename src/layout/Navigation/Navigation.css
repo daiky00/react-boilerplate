@@ -6,11 +6,12 @@
 
 .logo {
   align-items: center;
-  font-size: 22px;
+  font-size: 25px;
   font-weight: bold;
   display: flex;
   float: left;
   margin: 0;
+  text-transform: uppercase;
 }
 
 .ul {
