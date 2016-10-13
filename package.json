@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "webpack",
-    "dev": "webpack-dev-server --watch --inline --port 8080 --history-api-fallback",
+    "dev": "webpack-dev-server --history-api-fallback --port 8080 --hot --inline --watch",
     "start": "npm run test && npm run dev",
     "validate": "webpack-validator webpack.config.js",
     "clean": "rm -rf dist",
@@ -57,6 +57,7 @@
     "react-css-modules": "^3.7.10",
     "react-dom": "^15.3.2",
     "react-helmet": "^3.1.0",
+    "react-hot-loader": "^3.0.0-beta.5",
     "react-router": "^2.8.1",
     "react-to-html-webpack-plugin": "^2.2.0",
     "resolve-url-loader": "^1.6.0",

@@ -9,13 +9,14 @@ module.exports = {
   output: {
     filename: 'bundle.js',
     path: path.join(__dirname,'dist'),
+    publicPath: '/'
   },
   devtool: "source-map",
   module: {
     loaders: [
       {
         test: /\.js$/,
-        loader: 'babel-loader',
+        loader: 'babel',
         exclude: /node_modules/,
         query: { presets: ['es2015', 'react'] }
       },
