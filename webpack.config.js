@@ -10,6 +10,7 @@ module.exports = {
     filename: 'bundle.js',
     path: path.join(__dirname,'dist'),
   },
+  devtool: "source-map",
   module: {
     loaders: [
       {
@@ -18,7 +19,13 @@ module.exports = {
         exclude: /node_modules/,
         query: { presets: ['es2015', 'react'] }
       },
-      {test: /\.css$/, loader: ExtractTextPlugin.extract('style-loader', 'css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!postcss-loader') },
+      {
+        test: /\.css$/,
+        loader: ExtractTextPlugin.extract(
+          'style?sourceMap',
+          'css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!resolve-url!postcss?sourceMap'
+        )
+      },
       { test: /\.(png|jpg|jpeg|gif|svg|woff|woff2)$/, loader: "url-loader" }
     ]
   },
