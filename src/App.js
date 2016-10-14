@@ -4,6 +4,7 @@ import s from './app.css';
 import Layout from './layout/Layout';
 import Home from './containers/Home/Home';
 import About from './containers/About/About';
+import NotFound from './containers/NotFound/NotFound';
 
 export default class App extends Component {
 
@@ -13,6 +14,7 @@ export default class App extends Component {
         <Route path='/' component={Layout}>
           <IndexRoute component={Home} />
           <Route path="/about" component={About}/>
+          <Route path='*' component={NotFound} />
         </Route>
       </Router>
     );
