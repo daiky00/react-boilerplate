@@ -1,27 +1,26 @@
 {
-  "name": "webpack-demo",
+  "name": "react-boilerplate",
   "version": "1.0.0",
-  "description": "Working demo of CSS Modules, using Webpack's css-loader in module mode.",
+  "description": "react-boilerplate, so you can concentrate in what matters to you",
   "main": "index.js",
   "scripts": {
     "test": "webpack",
-    "dev": "webpack-dev-server --history-api-fallback --port 8080 --hot --inline --watch",
+    "dev": "webpack-dev-server --history-api-fallback --progress --watch",
     "start": "npm run test && npm run dev",
     "validate": "webpack-validator webpack.config.js",
     "clean": "rm -rf dist",
-    "build": "npm run clean && webpack",
-    "deploy": "npm run build && gh-pages -d dist -m \"Updates --skip-ci\""
+    "build": "npm run clean && webpack"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/css-modules/webpack-demo"
+    "url": "https://github.com/daiky00/react-boilerplate"
   },
-  "author": "Mark Dalgleish",
+  "author": "Francisco Pena",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/css-modules/webpack-demo/issues"
+    "url": "https://github.com/daiky00/react-boilerplate/issues"
   },
-  "homepage": "https://github.com/css-modules/webpack-demo",
+  "homepage": "https://github.com/daiky00/react-boilerplate",
   "devDependencies": {
     "autoprefixer": "^6.5.0",
     "babel-core": "^6.1.21",
@@ -36,7 +35,7 @@
     "node-libs-browser": "^1.0.0",
     "pixrem": "^3.0.2",
     "pleeease-filters": "^3.0.0",
-    "postcss": "^5.2.2",
+    "postcss": "^5.2.4",
     "postcss-calc": "^5.3.1",
     "postcss-color-function": "^2.0.1",
     "postcss-custom-media": "^5.0.1",

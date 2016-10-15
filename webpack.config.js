@@ -4,27 +4,37 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var path = require('path');
 
 module.exports = {
+  devtool: "source-map",
   context: path.join(__dirname, 'src'),
-  entry: './index.js',
+  entry: './index',
   output: {
     filename: 'bundle.js',
     path: path.join(__dirname,'dist'),
-    publicPath: '/'
+    publicPath: './'
   },
-  devtool: "source-map",
+  devServer: {
+    contentBase: './',
+    inline: true,
+    hot: true,
+    port: 8080
+  },
   module: {
     loaders: [
       {
         test: /\.js$/,
         loader: 'babel',
         exclude: /node_modules/,
-        query: { presets: ['es2015', 'react'] }
+        include: path.join(__dirname, 'src'),
+        query: {
+           presets: ['es2015', 'react'],
+           plugins: ['react-hot-loader/babel']
+         },
       },
       {
         test: /\.css$/,
         loader: ExtractTextPlugin.extract(
           'style?sourceMap',
-          'css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!resolve-url!postcss?sourceMap'
+          'css?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!resolve-url!postcss?sourceMap'
         )
       },
       { test: /\.(png|jpg|jpeg|gif|svg|woff|woff2)$/, loader: "url-loader" }
