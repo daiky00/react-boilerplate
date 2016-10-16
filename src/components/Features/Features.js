@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import {Grid, Row, Column} from 'react-cellblock';
+import postcss from './postcss.svg'
+import modularcss from './mocss.png'
+import grid from './grid.svg'
 import cx from 'classnames';
 import s from './Features.css';
 
@@ -13,7 +16,8 @@ export default class Features extends Component {
               <h2>Features</h2>
             </Column>
             <Column width="1/3">
-              <h3>Grid Layout Component</h3>
+              <img src={grid} width="250px" height="250px" />
+              <h3>Grid Components</h3>
               <pre className={cx(s.code, s.textRed)}>{`
                 <Grid>
                     <Row>
@@ -31,6 +35,7 @@ export default class Features extends Component {
               `}</pre>
             </Column>
             <Column width="1/3">
+            <img src={modularcss} width="300px" height="250px" />
               <h3>Modular CSS</h3>
               <pre className={cx(s.code, s.textGreen)}>{`
                 import React, {Component} from 'react';
@@ -51,10 +56,11 @@ export default class Features extends Component {
               `}</pre>
             </Column>
             <Column width="1/3">
+            <img src={postcss} width="250px" height="250px" />
               <h3>PostCSS</h3>
               <pre className={cx(s.code, s.textYellow)}>{`
                 @import '../../variables.css';
-                
+
                 .features {
                   color: var(--grey);
                   padding: 50px 0;
