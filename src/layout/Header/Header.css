@@ -1,7 +1,7 @@
-@import './../../variables.css';
+@import '../../variables.css';
 
 .header {
-  background: url(./header-background.svg) no-repeat 0 0, var(--blue);
+  background: url('./header-background.svg') no-repeat 0 0, var(--blue);
   background-size: cover;
   color: var(--white);
   position: relative;
