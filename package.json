@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "test": "jest",
-    "dev": "webpack-dev-server --progress --watch",
+    "dev": "webpack-dev-server",
     "start": "npm run build && npm run dev",
     "clean": "rm -rf ./dist",
     "build": "npm run clean && webpack"

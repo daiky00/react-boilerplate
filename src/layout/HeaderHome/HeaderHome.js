@@ -17,7 +17,7 @@ class HeaderHome extends Component{
               <Column width="2/2">
                 <h1>React Boilerplate</h1>
                 <h3>So you can concentrate in what matters to you</h3>
-                <img className={s.coding} src={code} width="500px" height="500px" />
+                <img className={s.coding} src={code} width="350px" height="350px" />
               </Column>
             </Row>
           </Grid>
