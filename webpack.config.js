@@ -6,7 +6,8 @@ var path = require('path');
 
 module.exports = {
   entry: {
-    app: './index',
+    app: ['./index', 'webpack/hot/only-dev-server'],
+    client: 'webpack-dev-server/client?http://localhost:8080'
   },
   output: {
     path: path.resolve(__dirname, './dist'),
@@ -43,8 +44,8 @@ module.exports = {
     ],
   },
   resolve: {
-    modules: ['node_modules', path.resolve(__dirname, 'react-boilerplate')],
-    extensions: [".js", ".json", ".jsx", ".css"]
+    modules: ['node_modules', path.resolve(__dirname, 'src')],
+    extensions: ['.js', '.json', '.jsx', '.css']
   },
   devtool: 'source-map',
   context: path.resolve(__dirname, 'src'),
@@ -53,7 +54,9 @@ module.exports = {
     inline: true,
     hot: true,
     port: 8080,
-    historyApiFallback: true
+    historyApiFallback: true,
+    progress: true,
+    watch: true
   },
   plugins: [
     // Minify and optimize the index.html
