@@ -17,14 +17,14 @@
   line-height: 1.2;
 }
 
-.textRed {
+.text-red {
   color: var(--light-red);
 }
 
-.textGreen {
+.text-green {
   color: var(--green);
 }
 
-.textYellow {
+.text-yellow {
   color: var(--light-yellow);
 }

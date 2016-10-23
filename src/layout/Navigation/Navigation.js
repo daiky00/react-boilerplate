@@ -11,7 +11,7 @@ class Navigation extends Component {
         <nav styleName='nav'>
           <Link styleName='link' to='/'>
             <span styleName='logo'><img src={logoUrl} width="45" height="45" alt="logo" />Company</span>
-            <small>Company made their website with React Boilerplate</small>
+            <small>React Boilerplate Example</small>
           </Link>
           <ul styleName='ul'>
             <li styleName='li'><Link styleName='link' to='about'>About</Link></li>

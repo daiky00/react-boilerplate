@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import {Grid, Row, Column} from 'react-cellblock';
+import CSSModules from 'react-css-modules';
+import styles from './Features.css';
 import postcss from './postcss.svg'
 import modularcss from './mocss.png'
 import grid from './grid.svg'
-import cx from 'classnames';
-import s from './Features.css';
 
-export default class Features extends Component {
+class Features extends Component {
   render() {
     return (
-      <section className={s.features}>
+      <section styleName="features">
         <Grid>
           <Row>
             <Column width="2/2">
@@ -18,7 +18,7 @@ export default class Features extends Component {
             <Column width="1/3">
               <img src={grid} width="250px" height="250px" />
               <h3>Grid Components</h3>
-              <pre className={cx(s.code, s.textRed)}>{`
+              <pre styleName="code text-red">{`
                 <Grid>
                     <Row>
                         <Column width="1/3">
@@ -37,7 +37,7 @@ export default class Features extends Component {
             <Column width="1/3">
             <img src={modularcss} width="300px" height="250px" />
               <h3>Modular CSS</h3>
-              <pre className={cx(s.code, s.textGreen)}>{`
+              <pre styleName="code text-green">{`
                 import React, {Component} from 'react';
                 import s from './Navigation.css';
 
@@ -58,7 +58,7 @@ export default class Features extends Component {
             <Column width="1/3">
             <img src={postcss} width="250px" height="250px" />
               <h3>PostCSS</h3>
-              <pre className={cx(s.code, s.textYellow)}>{`
+              <pre styleName="code text-yellow">{`
                 @import '../../variables.css';
 
                 .features {
@@ -83,3 +83,5 @@ export default class Features extends Component {
     );
   }
 };
+
+export default CSSModules(Features, styles, { allowMultiple: true } )

@@ -1,0 +1,12 @@
+@import './../../variables.css';
+
+.footer {
+  background: var(--grey);
+  color: var(--white);
+  padding: 50px;
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
